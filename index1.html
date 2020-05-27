@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Win over Covid-19</title>
+		<meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style1.css">
+
+		<script>
+			$(document).ready(function(){
+		  $("a").on('click', function(event) {
+		    if (this.hash !== "") {
+		      event.preventDefault();
+
+		      var hash = this.hash;
+
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		   
+		        window.location.hash = hash;
+		      });
+		    } 
+		  });
+		});
+
+		</script>
+</head>
+<body>
+<div class="nav">
+		<div class="logo"><a href="#home"><i>Covid-19</i></a></div>
+
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="index.html" onclick="closeNav()">Home</a>
+		  <a href="#protect" onclick="closeNav()">Protect</a>
+		  <a href="#about" onclick="closeNav()">About</a>
+		  <a href="#news" onclick="closeNav()">News</a>
+		</div>
+
+		<span style="cursor:pointer;float: right;margin:-30px 30px" onclick="openNav()"><img src="images/toogle-icon1.png"></span>
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+   <div class="header_section">
+   <div class="banner_section layout_padding" id="home">
+         <div class="container">
+            <div id="my_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="container">
+                              <h1 class="banner_taital">Are you feeling sick?</h1>
+                              <p class="banner_text">Don't be panic, just stay home & stay safe. </p>
+                              <p class="banner_text">Check here about COVID-19</p>
+                              <div class="more"><a href="overview.html">Read More</a></div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="banner_img"><center><img src="images/banner-img.png" height="auto" width="400px"></center></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>            
+      </div>
+  </div>
+
+
+         <div class="container" id="protect">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="protect_taital">Protect Yourself</h1>
+                  <p class="protect_text">Protect yourself and others around you by knowing the facts and taking appropriate precautions. Follow advice provided by your local public health agency.</p>
+               </div>
+            </div>
+            <div class="protect_section_2 layout_padding">
+               <div class="row">
+                  <div class="col-md-6" ><center>
+                  	<div class="img_border"><img class="iv" src="images/vector2.jpg"></div></center>
+                  </div>
+                  <div class="col-md-6">
+                     <h1 class="hands_text"><a>Wash your <br>hands frequently</a></h1>
+                  </div>
+                </div>
+                <br>
+
+                <div class="row">
+                  <div class="col-md-6" ><center>
+                  	<div class="img_border"><img class="iv" src="images/vector3.jpg"></div></center>
+                  </div>
+                  <div class="col-md-6">
+                     <h1 class="hands_text"><a>Avoid touching eyes,<br>nose and mouth</a></h1>
+                  </div>
+                </div>
+                <br>
+
+                <div class="row">
+                  <div class="col-md-6" ><center>
+                  	<div class="img_border"><img class="iv" src="images/vector1.jpg"></div></center>
+                  </div>
+                  <div class="col-md-6">
+                     <h1 class="hands_text"><a>Maintain social <br>distancing</a></h1>     
+                  </div>
+                </div>
+                <br>
+
+               </div>
+            </div>
+         </div>
+
+         <div class="about_section layout_padding" id="about">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <h1 class="about_taital">What is Coronavirus?</h1>
+                  <p class="about_text">COVID-19 is the disease caused by the new coronavirus that emerged in China in December 2019.<br>
+						<span>COVID-19 symptoms include cough, fever, shortness of breath, muscle aches, sore throat, unexplained loss of taste or smell, diarrhea and headache. COVID-19 can be severe, and some cases have caused death.</span>
+					</p>
+                  <div class="read_bt"><a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus">Read More</a></div>
+               </div>
+               <div class="col-md-6">
+                  	<img class="img-fluid about_img" src="images/img-1.png">                 
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="news_section layout_padding" id='news'>
+         <div class="container">
+            <h1 class="news_taital">Latest News</h1>
+            <p class="news_text">Here you get lattest Updates of India<br> Check below live Updates related Covid-19 in india.</p>
+            <div class="news_section_2 layout_padding">
+               <div class="box_main">
+                   <div class="image_1"><img class="image_1" src="images/cov.jpg"></div>
+                     <h2 class="design_text">Coronavirus Live Updates: India enters top 10-list</h2>
+                     <p class="text">India witnessed a spike of 6,387 new COVID-19 cases and 170 deaths in the last 24 hours. The total number of cases in the country now stands at 1,51,767 including 83,004 active cases. As many as 64,425 people have been cured/discharged. The death toll stands at 4,337, the Ministry of Health and Family Welfare said in its latest update on Wednesday.</p>
+                   <div class="read_btn"><a href="https://www.financialexpress.com/lifestyle/health/coronavirus-india-live-news-updates-state-wise-tally-death-toll-covid-19-vaccine-news-lockdown-4-latest-news-maharashtra-mumbai-delhi-up-corona-tracker/1970503/">Read More</a></div>
+              </div>
+            </div>
+         </div>
+      </div>
+
+       <div class="copyright_section">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <p class="copyright_text">© All Rights Reserved by 👦🏻 Chintan Dobariya &nbsp; | &nbsp;📞 +91 8153065799</p>
+               </div>
+            </div>
+         </div>
+      </div>
+</body>
+</html> 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Covid-19</title>
+	<meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	<div class="nav">
+		<div class="logo"><a href="#home"><i>Covid-19</i></a></div>
+
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="index.html" onclick="closeNav()">Home</a>
+		  <a href="#protect" onclick="closeNav()">Protect</a>
+		  <a href="#about" onclick="closeNav()">About</a>
+		  <a href="#news" onclick="closeNav()">News</a>
+		</div>
+
+		<span style="cursor:pointer;float: right;margin:-30px 30px" onclick="openNav()"><img src="images/toogle-icon1.png"></span>
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+	<div class="container">
+		<center><h1>Overview</h1><hr/ style="width: 10%;"></center>
+		<br>
+		<div class="row"><p style="width: 90%;text-align: justify;font-size: 16px">
+			Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+			<br><br>
+			Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.
+			<br><br>
+			The best way to prevent and slow down transmission is be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face. 
+			<br><br>
+			The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).
+			<br><br>
+			At this time, there are no specific vaccines or treatments for COVID-19. However, there are many ongoing clinical trials evaluating potential treatments. WHO will continue to provide updated information as soon as clinical findings become available.
+		</p></div>
+	</div>
+  </body>
+</html>
